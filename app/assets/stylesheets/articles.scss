@@ -66,7 +66,7 @@ a {
 }
 
 .navbar-brand{
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .navbar-inverse{
@@ -76,9 +76,14 @@ a {
 
 .navbar-inverse .navbar-brand{
   color: white;
+  font-weight: bold;
 }
 
 .navbar-inverse .navbar-toggle{
-    border-color: white;
+  border-color: white;
 }
 
+.notice, .alert{
+  padding-left: 260px;
+  font-weight: bold;
+}
