@@ -59,3 +59,26 @@ a {
     display: none;
   }
   
+// ナビゲーション
+.navbar{
+  background-color: #56e4dd;
+  border-color: white;
+}
+
+.navbar-brand{
+    font-size: 25px;
+}
+
+.navbar-inverse{
+  background-color: #56e4dd;
+  color: white;
+}
+
+.navbar-inverse .navbar-brand{
+  color: white;
+}
+
+.navbar-inverse .navbar-toggle{
+    border-color: white;
+}
+
