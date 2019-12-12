@@ -1,0 +1,16 @@
+<%search_form_for @query, url: articles_path %>
+  <%# タイトルか記事のカラムを指定値で検索%>
+  <%= f.label :title_or_content_cont, "タイトルor 記事 %>
+  <%= f.search_field :title_or_content_cont %>
+
+  <%# タイトルを指定値で検索%>
+  <%= f.label :title_start, "タイトルor 記事 %>
+  <%= f.search_field :title_start %>
+
+<%= f.submit %>
+
+#検索結果
+<% @articles.each do |@article| %>
+  <%= article.title %></td>
+
+ <% end %>
