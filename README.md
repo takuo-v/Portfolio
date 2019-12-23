@@ -1,24 +1,41 @@
-# README
+## ツール・ライブラリの名前
+ 
+「ブログサービス」
+ 
+## 簡単な説明
+ 
+Railsチュートリアルで学習したことを復習するために作成したBlogアプリです。
+※テストは実装しておりません。（開発中）
+  
+## 機能
+ 
+・ログイン機能
+・記事投稿機能（新規作成・編集・削除）
+・画像投稿機能
+  
+## 必要要件
+ 
+・要件 rails ‘5.0.7’以上のものが必要になります。
+ ※開発には’5.0.7’を使用していますので動作しない場合は同じバージョンで試してください。
+ 
+## 起動方法
+```
+# 下記githubのページよりソースコードをクローンしてください。
+$ git clone https://github.com/takuo-v/Portfolio.git
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#「blog」のディレクトリに移動
+$ cd blog
 
-Things you may want to cover:
+#rails serverを起動
+$ rails server
 
-* Ruby version
+#ブラウザでアプリケーションを開いてください。
+※開発中はGoogleChromeを使用していましたので、こちらを推奨します。
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 使い方
+ 
+1.  [新規登録]をクリックした後、名前・メールドレス・パスワードを入力してアカウント作成してください。
+    その後自動的にログインされます。
+2.  [新規作成]をクリックし、タイトル・本文を入力して[Update]をクリックすると記事が作成されます。
+3.  記事一覧ページで記事をクリックすると記事の閲覧・編集・削除が行なえます。
+4.  新規作成・編集ページで上部にあるカメラマークをクリックすると画像も一緒に投稿できます。
