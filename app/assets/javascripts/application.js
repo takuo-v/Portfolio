@@ -17,6 +17,7 @@
 //= require_tree .
 
 
+// 記事作成・編集時にカメラマークを押すとライブラリから写真を選択してアップロードする。
 $(document).on('turbolinks:load', function() {
   $('#cover-image').click(function() {
     $('#article_image').click();
