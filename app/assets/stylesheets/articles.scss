@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+
+// 共通部分
 .margin-top-5per{
   margin-top:  5%;  
 }
@@ -62,6 +64,11 @@ a {
     display: none;
   }
   
+.notice, .alert{
+  padding-left: 260px;
+  font-weight: bold;
+}
+  
 // ナビゲーション
 .navbar{
   background-color: #56e4dd;
@@ -86,12 +93,8 @@ a {
   border-color: white;
 }
 
-.notice, .alert{
-  padding-left: 260px;
-  font-weight: bold;
-}
 
-// 
+// 新規登録
 .registration{
   background-image: url(diary_2.jpg);
   background-size: cover;

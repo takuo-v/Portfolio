@@ -1,6 +1,9 @@
+<!--ログイン画面-->
+
 <div class="container">
   <h2 class='text-center margin-top-5per'>ログイン</h2>
   
+  <!--メールアドレス・パスワード入力部分-->
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="form-group">
       <%= f.label :email, 'メールアドレス' %><br />

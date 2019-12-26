@@ -1,3 +1,5 @@
+<!--記事一覧ページ-->
+
 <div class="container">
   <div class= 'row'>
     <% @articles.each do |article| %>
@@ -21,5 +23,5 @@
   <div class= 'row'>
     <%= link_to '新規作成', new_article_path, class: 'margin-top-5per btn btn-primary' %>
   </div>
-
+</div>
 

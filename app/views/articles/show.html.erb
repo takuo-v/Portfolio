@@ -1,11 +1,16 @@
+<!--記事参照ページ-->
+
 <div class="container">
   <div class="col-md-12  margin-bottom-5per article-block">
+    
+    <!--写真表示部分-->
     <% if @article.image_id.present? %>
       <%= image_tag attachment_url(@article, :image), class: 'article-image padding-top-15' %>
     <% else %>
       <%= image_tag 'dog.jpg', class: 'article-image padding-top-15' %>      `
     <% end  %>
     
+    <!--タイトル・内容　表示部分-->
     <h1><%= @article.title %></h1>
     <div class="padding-bottom-15" style="padding: 10px">
       <%= simple_format @article.body %>
@@ -13,7 +18,10 @@
         <%= @article.created_at.strftime("%Y年%m月%d日 ") %>
       </p>
     </div>
-      <%= link_to '編集', edit_article_path(@article), class: 'btn btn-primary', style: 'margin-bottom: 10px; margin-right: 10px'  %>
-      <%= link_to '削除', article_path(@article), method: :delete, data: {confirm: '削除してもよろしいですか？'}  ,class: 'btn btn-danger', style: 'margin-bottom: 10px; margin-right: 10px'%>
+    
+    <!--編集・削除　ボタン-->
+    <%= link_to '編集', edit_article_path(@article), class: 'btn btn-primary', style: 'margin-bottom: 10px; margin-right: 10px'  %>
+    <%= link_to '削除', article_path(@article), method: :delete, data: {confirm: '削除してもよろしいですか？'}  ,class: 'btn btn-danger', style: 'margin-bottom: 10px; margin-right: 10px'%>
+      
   </div>
 </div>

@@ -1,4 +1,8 @@
+<!--新規作成・編集　フォーム部分-->
+
 <%= form_for article do |f| %>
+  
+  <!--写真表示部分-->
   <div id="cover-image" class="form-group padding-top-15 relative">
     <% if article.image_id.present? %>
       <%= image_tag attachment_url(article, :image), class: 'article-image' %>
@@ -7,9 +11,9 @@
     <% end %>
     <i class="fa fa-camera"></i>
   </div>  
-  
   <%= f.attachment_field :image %>
 
+  <!--タイトル・内容　入力-->
   <div class= "form-group padding-top-15">
     <%= f.label :title, 'タイトル' %>
     <%= f.text_field :title, class: 'form-control' %>
@@ -18,5 +22,8 @@
     <%= f.label :body, '本文' %>
     <%= f.text_area :body, rows: 10, class: 'form-control' %>
   </div>
-  <%= f.submit 'Update ', class: 'btn btn-success' %>
+  
+  <!--記事投稿ボタン-->
+  <%= f.submit '更新', class: 'btn btn-success' %>
+  
 <% end %>
